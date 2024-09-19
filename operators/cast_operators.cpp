@@ -45,7 +45,13 @@ public:
 char toChar(int asciiValue)
 {
     // TODO: convert asciiValue to char
-}
+    char c= static_cast<char>(asciiValue);
+    return c;
+    
+} 
+//dynamic_cast is evaluated during runtime
+//if the dynamic_cast can be executed, it will be done, and it means a true value
+//if the dynamic_cast cannot be executed, it will give a null pointer, which means false
 
 void animalTalk()
 {
@@ -54,13 +60,13 @@ void animalTalk()
     for (Animal *animal : animals)
     {
         // TODO: construct the condition to check the animal is a Dog
-        if ()
+        if (Dog *dog = dynamic_cast<Dog *>(animal))
         {
             cout << "Speaking dog is: " << dog->getAge() << " years old.";
             dog->speak();
         }
         // TODO: construct the condition to check the animal is a Cat
-        else if ()
+        else if (Cat *cat = dynamic_cast<Cat *>(animal))
         {
             cout << "Speaking cat is: " << cat->getColor() << " color.";
             cat->speak();

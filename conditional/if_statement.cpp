@@ -21,12 +21,15 @@ int main()
 
     cout << "Give me a number: ";
     cin >> number;
-    
+
     // TODO: Implement the conditional statement
-    
+
     // TODO: Implement the conditional statement using a class
 
-    if ()
+    bool isEven = (number % 2 == 0);
+    MyClass myclass = MyClass(number);
+
+    if (myclass)
     {
         cout << number << " is even." << endl;
     }

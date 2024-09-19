@@ -18,7 +18,10 @@ int main()
     signedInt.value = -1;
 
     // TODO: reinterpret_cast signedInt to UnsignedInt
+    UnsignedInt *unsignedInt=reinterpret_cast<UnsignedInt*>(&signedInt);
     
+    //reinterpret_cast - copies the bit patter/representation to another place, does not make conversion
+
     cout << "Casted value: " << unsignedInt->value << endl;
 
     return 0;

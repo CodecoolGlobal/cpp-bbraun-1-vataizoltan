@@ -35,4 +35,8 @@ int main()
     }
 
     // TODO: Use the range-based for loop to print the values of myArray
+    for(auto a:myArray)
+    {
+        cout<<a<<" ";
+    }
 }

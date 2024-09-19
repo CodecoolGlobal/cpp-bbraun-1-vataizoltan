@@ -10,11 +10,34 @@ int main()
     // TODO: Print the numbers array using
     // traditional for loop
 
-    // Do-while loop
+    for (unsigned int i=0; i<10; i++)
+    {
+        cout<<numbers[i]<<" ";
+    }
+    cout<<endl;
 
+    // Do-while loop
+    unsigned int j=0;
+    do
+    {
+        cout<<numbers[j]<<" ";
+        j++;
+    }
+    while(j<10);
+    cout<<endl;
     // While loop
-    
+    unsigned int k=0;
+    while(k<10)
+    {
+        cout<<numbers[k]<<" ";
+        k++;
+    }
+    cout<<endl;
     // Range-based for loop 
+    for(unsigned int l:numbers)
+    {
+        cout<<l<<" ";
+    }
     
     return 0;
 }
