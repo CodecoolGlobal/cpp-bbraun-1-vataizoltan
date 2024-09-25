@@ -4,6 +4,13 @@
 using namespace std;
 
 // TODO: implement a function that prints a message a given number of times, by default once
+void printMessage(string s, int x = 1)
+{
+    for(int i=1;i<=x;i++)
+    {
+        cout<<s<<endl;
+    }
+}
 
 int main()
 {

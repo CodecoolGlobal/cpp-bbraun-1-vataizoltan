@@ -3,8 +3,23 @@
 using namespace std;
 
 // TODO: implement a function that swaps two integers
+void swap(int & x, int & y)
+{
+    int temp = x;
+    x=y;
+    y=temp;
+}
 
 // TODO: implement a function that returns the length of a string
+int getLength(string s)
+{
+    int length=0;
+    for(auto i:s)
+    {
+        length++;
+    }
+    return length;
+}
 
 int main()
 {

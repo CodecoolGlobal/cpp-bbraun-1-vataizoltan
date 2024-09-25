@@ -22,5 +22,7 @@ int main()
     numbers = new int[10];
     cout << "Memory allocated successfully." << endl;
 
+    int value=atexit(cleanup);
+    cout<<value<<endl;
     return 0;
 }
