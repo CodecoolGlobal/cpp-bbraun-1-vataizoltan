@@ -11,7 +11,7 @@ void swap(int & x, int & y)
 }
 
 // TODO: implement a function that returns the length of a string
-int getLength(string s)
+int getLength(const string &s)
 {
     int length=0;
     for(auto i:s)

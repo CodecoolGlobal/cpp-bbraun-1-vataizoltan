@@ -4,7 +4,7 @@
 using namespace std;
 
 // TODO: implement a function that calculates the sum of the elements in a vector
-int sumElements(vector<int> v)
+int sumElements(vector<int> v) noexcept
 {
     int sum = 0;
     for(auto i:v)
